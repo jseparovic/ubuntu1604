@@ -1,4 +1,5 @@
 ### Build steps
+```
 apt update -y
 apt install build-essential dh-autoreconf libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev -y
 apt install -y cmake libcap-dev libbz2-dev libclang-dev
@@ -6,8 +7,10 @@ wget http://archive.ubuntu.com/ubuntu/pool/main/c/cdrkit/cdrkit_1.1.11.orig.tar.
 tar xfvz cdrkit_1.1.11.orig.tar.gz
 cd cdrkit-1.1.11/
 make
+```
 
 ### Build Machine
+```
 root@ubuntu-2gb-hil-1:~# cat /etc/os-release
 NAME="Ubuntu"
 VERSION="20.04.6 LTS (Focal Fossa)"
@@ -24,3 +27,4 @@ UBUNTU_CODENAME=focal
 
 root@ubuntu-2gb-hil-1:~# uname -a
 Linux ubuntu-2gb-hil-1 5.4.0-144-generic #161-Ubuntu SMP Fri Feb 3 14:49:04 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+```
